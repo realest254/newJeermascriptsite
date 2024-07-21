@@ -1,0 +1,96 @@
+.contact-section {
+    background-color: #002366;
+    color: white;
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .contact-icon {
+    background-color: #1e90ff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  
+  .contact-details h3 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .contact-details p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+  }
+  
+  .contact-footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      width: 100%;
+      padding: 0;
+    }
+    .contact-section h1 {
+      font-size: 2rem;
+    }
+    .contact-details h3 {
+      text-align: center;
+    }
+    .contact-container {
+      padding: 1em;
+    }
+    .contact-info-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-info {
+      margin: 10px 0;
+    }
+  }

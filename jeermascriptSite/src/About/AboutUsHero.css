@@ -1,0 +1,102 @@
+.about-us-hero {
+    background-image: linear-gradient(rgba(7, 7, 185, 0.6), rgba(0, 0, 255, 0.4)),url('../Utils/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+  }
+  
+  .about-us-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 100, 0.7);
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content > p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .services {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .service-icon {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .service-card p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-us-hero {
+      width: 100%;
+      
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content > p {
+      font-size: 1rem;
+    }
+  
+    .services {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
