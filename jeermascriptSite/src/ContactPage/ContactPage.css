@@ -113,3 +113,19 @@ button:hover {
     width: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    width: 80%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  input,textarea {
+    width: 80%;
+  }
+  form > button {
+    width: 50%;
+  }
+}

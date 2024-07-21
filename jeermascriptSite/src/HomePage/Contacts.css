@@ -3,7 +3,7 @@
     font-family: Arial, sans-serif;
     background-image: linear-gradient(rgba(4, 4, 146, 0.8), rgba(9, 9, 175, 0.6));
     color: white;
-    min-height: 100vh;
+    min-height: fit-content;
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;

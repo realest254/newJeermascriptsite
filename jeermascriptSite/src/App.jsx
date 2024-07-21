@@ -1,7 +1,8 @@
 // src/App.jsx
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import CustomRouter from './customRouter';
 import Home from './home.jsx';
 import Navbar from './Shared/Navbar.jsx';
 import Footer from './Shared/Footer.jsx';
@@ -34,8 +35,8 @@ const App = () => {
 
   return (
     <HelmetProvider>
-      <Router>
-      <ScrollToTop/>
+      <CustomRouter>
+        <ScrollToTop/>
         <SEO 
           title="Jeermascript Agency | Digital Marketing in Nairobi"
           description="JEERMASCRIPT AGENCY specializes in SEO, digital marketing, social media, and web development services. Grow your online presence with us!"
@@ -67,7 +68,7 @@ const App = () => {
           </main>
           <Footer />
         </div>
-      </Router>
+      </CustomRouter>
     </HelmetProvider>
   );
 };
