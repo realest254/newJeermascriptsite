@@ -83,6 +83,7 @@
   @media (max-width: 768px) {
     .about-us-hero {
       width: 100%;
+      min-height: 100vh;
       
     }
   

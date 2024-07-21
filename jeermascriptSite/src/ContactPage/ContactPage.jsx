@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './ContactPage.css';
+import Key from '../../../../Experts-Parlor/utils';
 
 // Replace this with your actual access key
-const accessKey = 'YOUR_ACCESS_KEY_HERE';
+const accessKey = Key;
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
