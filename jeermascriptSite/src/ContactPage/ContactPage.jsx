@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactPage.css';
-import Key from '../../../../Experts-Parlor/utils';
+import Key from '../../../../Experts-Parlor/utils.js';
 
 // Replace this with your actual access key
 const accessKey = Key;
