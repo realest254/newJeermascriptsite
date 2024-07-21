@@ -16,6 +16,7 @@ const ContactForm = () => {
 
   const [errors, setErrors] = useState({});
   const [submitStatus, setSubmitStatus] = useState('');
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -75,6 +76,8 @@ const ContactForm = () => {
         if (response.status === 200) {
           setSubmitStatus('Form submitted successfully');
           setFormData({ name: '', email: '', tel: '', message: '', botCheck: '' });
+          setFormSubmitted(true); // Add this line
+          setTimeout(() => setFormSubmitted(false), 5000); // Reset after 5 seconds
         } else {
           setSubmitStatus(result.message || 'Something went wrong!');
         }
@@ -100,7 +103,7 @@ const ContactForm = () => {
         </div>
         <div className="contact-form">
           <h2>CONTACT FORM</h2>
-          <form onSubmit={handleSubmit} noValidate>
+          <form onSubmit={handleSubmit} noValidate className={formSubmitted ? 'form-submitted' : ''}>
             <div className={`form-group ${errors.name ? 'invalid' : ''}`}>
               <input
                 type="text"

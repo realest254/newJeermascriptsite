@@ -88,6 +88,13 @@ body {
     cursor: pointer;
     font-weight: bold;
   }
+  .primary-button:hover {
+    background-color: darkblue;
+  }
+  .secondary-button:hover {
+    background-color:black;
+    color: white;
+  }
   
   .primary-button {
     background-color: #1877f2;

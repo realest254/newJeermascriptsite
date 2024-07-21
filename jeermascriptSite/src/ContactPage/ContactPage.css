@@ -93,6 +93,32 @@ button:hover {
 .form-group.invalid textarea {
   border-color: #ff6b6b;
 }
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+  }
+}
+
+.form-submitted {
+  border: 2px solid #2ecc71;
+  animation: borderPulse 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.form-submitted input,
+.form-submitted textarea {
+  border-color: #2ecc71;
+}
+
+.form-submitted button {
+  background-color: #2ecc71;
+}
 
 @media (min-width: 768px) {
   .contact-page {
